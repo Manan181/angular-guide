@@ -1,0 +1,5 @@
+<ion-content>
+  <input id="input" placeholder="Enter text" [(ngModel)]="username" />&nbsp;
+  <button [disabled]="!username.length" (click)="username=''">Clear</button>
+  <h3>{{ username }}</h3>
+</ion-content>
