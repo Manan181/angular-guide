@@ -9,6 +9,6 @@ import * as $ from 'jquery';
 export class SuccessAlertComponent implements OnInit{
 
   ngOnInit(): void {
-    $('.success-alert').css('color', 'green');
+    $('.success-alert').css({'background-color': 'green', 'color': 'white', 'padding': '20px'});
   }
 }

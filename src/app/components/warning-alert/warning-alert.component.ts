@@ -9,6 +9,6 @@ import * as $ from 'jquery';
 export class WarningAlertComponent implements OnInit{
   
   ngOnInit(): void {
-    $('.warning-alert').css('color', 'red');
+    $('.warning-alert').css({'background-color': 'red', 'color': 'white', 'padding': '20px'});
   }
 }
