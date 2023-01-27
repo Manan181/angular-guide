@@ -5,10 +5,12 @@ import { IonicModule } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { Assignment3Component } from './components/assignment3/assignment3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    Assignment3Component,
   ],
   imports: [
     BrowserModule,

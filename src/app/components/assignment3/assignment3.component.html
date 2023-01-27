@@ -1,0 +1,8 @@
+<button (click)="toggleClick()">Display Details</button>
+<p *ngIf="toggle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error sint dolores recusandae exercitationem, numquam aperiam enim. Mollitia reprehenderit a, nam reiciendis assumenda dolorem dicta dolorum ducimus aspernatur facilis, ipsum expedita.</p>
+<div class="logsDiv">
+    <h3>Toggle Logs</h3>
+    <ul *ngFor="let log of toggleLogs; let i = index">
+        <li [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': i >= 4}">{{ i + 1 }}: {{ log.toggleState }}, Timestamp: {{ log.timestamp }}</li>
+    </ul>
+</div>
